@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct TasksListView: View {
+    
     var body: some View {
         List {
-          Text("Hello")
+          TaskRowView(taskItem: TaskModel(title: "Test task", isCompleted: false))
         }
+        .listStyle(.plain)
         .navigationTitle("Task List 🗒️")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                EditButton()
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink("Add") {
+                    AddTaskView()
+                }
+            }
+        }
     }
 }
 
