@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct AddTaskView: View {
+    
+    @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject var listViewModel: ListViewModel
     @State var textFiledText: String = ""
+    @State var alertTitle: String = ""
+    @State var showAlert: Bool = false
     
     var body: some View {
         ScrollView {
@@ -19,7 +24,7 @@ struct AddTaskView: View {
                     .background(Color.gray.opacity(0.2))
                     .cornerRadius(10.0)
                 Button {
-                    // logic here
+                  saveButtonTapped()
                 } label: {
                     Text("Save task")
                         .font(.headline)
@@ -28,12 +33,30 @@ struct AddTaskView: View {
                         .frame(maxWidth: .infinity)
                         .background(Color.accentColor)
                         .cornerRadius(10)
-                    
                 }
             }
             .padding(.horizontal)
         }
         .navigationTitle("Add new task 🖊️")
+        .alert(alertTitle, isPresented: $showAlert) {
+            Button("OK", role: .cancel) {}
+        }
+    }
+    
+    func saveButtonTapped() {
+        if textIsAppropriate() {
+            listViewModel.saveTask(taskTitle: textFiledText)
+            dismiss()
+        }
+    }
+    
+    func textIsAppropriate() -> Bool {
+        if textFiledText.count < 3 {
+            alertTitle = Constants.AlertsStrings.wrongTaskLengthText
+            showAlert.toggle()
+            return false
+        }
+        return true
     }
 }
 
@@ -41,6 +64,7 @@ struct AddTaskView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             AddTaskView()
+                .environmentObject(ListViewModel())
         }
     }
 }
