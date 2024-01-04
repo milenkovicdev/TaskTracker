@@ -13,7 +13,8 @@ struct TaskRowView: View {
     
     var body: some View {
         HStack {
-            Image(systemName: taskItem.isCompleted ? "checkmark.square" : "square")
+            Image(systemName: taskItem.isCompleted ? Constants.SystemImageNames.checkmarkSquare : Constants.SystemImageNames.square)
+                .foregroundColor(taskItem.isCompleted ? Color.green : Color.red)
             Text(taskItem.title)
             Spacer()
         }

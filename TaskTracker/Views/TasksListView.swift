@@ -9,11 +9,22 @@ import SwiftUI
 
 struct TasksListView: View {
     
+    @EnvironmentObject var listViewModel: ListViewModel
+    
     var body: some View {
         List {
-          TaskRowView(taskItem: TaskModel(title: "Test task", isCompleted: false))
+            ForEach(listViewModel.tasks) { task in
+               TaskRowView(taskItem: task)
+                    .onTapGesture {
+                        withAnimation(.linear) {
+                            listViewModel.updateTask(task: task)
+                        }
+                    }
+            }
+            .onDelete(perform: listViewModel.deleteTask)
+            .onMove(perform: listViewModel.moveTask)
         }
-        .listStyle(.plain)
+        .listStyle(PlainListStyle())
         .navigationTitle("Task List 🗒️")
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
@@ -32,6 +43,7 @@ struct TasksListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             TasksListView()
+                .environmentObject(ListViewModel())
         }
     }
 }
