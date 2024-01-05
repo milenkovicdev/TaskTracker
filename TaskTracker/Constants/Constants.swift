@@ -16,4 +16,8 @@ struct Constants {
         static let square = "square"
         static let checkmarkSquare = "checkmark.square"
     }
+    
+    struct UserDefaultsKeys {
+        static let taskListKey = "task_list"
+    }
 }
