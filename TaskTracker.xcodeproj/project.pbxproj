@@ -10,6 +10,7 @@
 		D91CD59B2B380FC50061E8C1 /* TasksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91CD59A2B380FC50061E8C1 /* TasksListView.swift */; };
 		D91CD59E2B3811450061E8C1 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91CD59D2B3811450061E8C1 /* TaskRowView.swift */; };
 		D91CD5A02B3820980061E8C1 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91CD59F2B3820980061E8C1 /* AddTaskView.swift */; };
+		D91EC1412B49EF1200DC5326 /* NoTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EC1402B49EF1200DC5326 /* NoTaskView.swift */; };
 		D94940AE2B2CD88B001113BA /* TaskTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94940AD2B2CD88B001113BA /* TaskTrackerApp.swift */; };
 		D94940B22B2CD88C001113BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94940B12B2CD88C001113BA /* Assets.xcassets */; };
 		D94940B52B2CD88C001113BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94940B42B2CD88C001113BA /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		D91CD59A2B380FC50061E8C1 /* TasksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListView.swift; sourceTree = "<group>"; };
 		D91CD59D2B3811450061E8C1 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 		D91CD59F2B3820980061E8C1 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		D91EC1402B49EF1200DC5326 /* NoTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTaskView.swift; sourceTree = "<group>"; };
 		D94940AA2B2CD88B001113BA /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94940AD2B2CD88B001113BA /* TaskTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTrackerApp.swift; sourceTree = "<group>"; };
 		D94940B12B2CD88C001113BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 				D91CD59A2B380FC50061E8C1 /* TasksListView.swift */,
 				D91CD59D2B3811450061E8C1 /* TaskRowView.swift */,
 				D91CD59F2B3820980061E8C1 /* AddTaskView.swift */,
+				D91EC1402B49EF1200DC5326 /* NoTaskView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				D94940AE2B2CD88B001113BA /* TaskTrackerApp.swift in Sources */,
 				D9900F742B46E52E00E142DF /* Constants.swift in Sources */,
 				D91CD59E2B3811450061E8C1 /* TaskRowView.swift in Sources */,
+				D91EC1412B49EF1200DC5326 /* NoTaskView.swift in Sources */,
 				D91CD59B2B380FC50061E8C1 /* TasksListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
