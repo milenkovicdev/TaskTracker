@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Constants {
     struct AlertsStrings {
@@ -19,5 +20,9 @@ struct Constants {
     
     struct UserDefaultsKeys {
         static let taskListKey = "task_list"
+    }
+    
+    struct TTColors {
+        static let secondaryAccentColor = Color("SecondaryAccentColor")
     }
 }
