@@ -48,9 +48,27 @@ struct TasksListView: View {
 
 struct TasksListView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            TasksListView()
-                .environmentObject(ListViewModel())
+        Group {
+            NavigationView {
+                TasksListView()
+                    .environmentObject(ListViewModel())
+            }
+            .preferredColorScheme(.light)
+            
+            NavigationView {
+                TasksListView()
+                    .environmentObject(ListViewModel())
+            }
+            .preferredColorScheme(.dark)
+            
+            
+            NavigationView {
+                TasksListView()
+                    .environmentObject(ListViewModel())
+            }
+            .preferredColorScheme(.light)
+            .previewInterfaceOrientation(.landscapeLeft)
+            
         }
     }
 }
