@@ -6,6 +6,8 @@
 
 # Screenshots
 
+<img src="https://cloud.githubusercontent.com/assets/yourgif.gif](https://github.com/milenkovicdev/TaskTracker/assets/153915818/d35ad6ec-96d6-4a3f-8ffe-d20195d546bc" width="400" height="790">
+
 ![Simulator Screenshot - iPhone 14 Pro - 2024-01-12 at 23 00 22](https://github.com/milenkovicdev/TaskTracker/assets/153915818/d35ad6ec-96d6-4a3f-8ffe-d20195d546bc)
 
 ![Simulator Screenshot - iPhone 14 Pro - 2024-01-12 at 23 00 16](https://github.com/milenkovicdev/TaskTracker/assets/153915818/47ba355c-0f45-447c-8c10-0f17f1f2656c)
