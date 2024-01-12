@@ -21,7 +21,7 @@ struct AddTaskView: View {
                 TextField("Type task here...", text: $textFiledText)
                     .padding(.leading)
                     .frame(height: 55)
-                    .background(Color.gray.opacity(0.2))
+                    .background(Color(uiColor: UIColor.secondarySystemBackground))
                     .cornerRadius(10.0)
                 Button {
                   saveButtonTapped()
@@ -31,7 +31,7 @@ struct AddTaskView: View {
                         .foregroundColor(.white)
                         .frame(height: 55)
                         .frame(maxWidth: .infinity)
-                        .background(Color(uiColor: UIColor.systemBackground))
+                        .background(Color.accentColor)
                         .cornerRadius(10)
                 }
             }
