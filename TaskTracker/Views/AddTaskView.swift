@@ -31,7 +31,7 @@ struct AddTaskView: View {
                         .foregroundColor(.white)
                         .frame(height: 55)
                         .frame(maxWidth: .infinity)
-                        .background(Color.accentColor)
+                        .background(Color(uiColor: UIColor.systemBackground))
                         .cornerRadius(10)
                 }
             }

@@ -17,6 +17,7 @@ struct TaskTrackerApp: App {
             NavigationView {
                 TasksListView()
             }
+            .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)
         }
     }
